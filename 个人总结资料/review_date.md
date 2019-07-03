@@ -208,3 +208,41 @@
 # 五.	pythonweb
 
 # 六.	框架
+
+# 七．其他软件的使用
+
+1. git的使用
+
+   在未进行任何add 和commit时，是没有master分支的，因为commit必须指向一个分支，commit后自动创建master分支．	
+
+# 八．	软件安装
+
+1. typora的安装步骤
+
+   ```shell
+   1.	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE这是一个可选的操作，但是建议还是添加上这一步。
+   2.	sudo add-apt-repository 'deb http://typora.io linux/'添加typora的远程仓库
+   3.	sudo apt-get update更新
+   4.	sudo apt-get install typora 安装
+   如果出现typora无法打开的情况，执行 sudo apt install gconf2
+   ```
+
+2. chrome的安装步骤
+
+   ```shell
+   #将下载源加入到系统的源列表;如果返回“地址解析错误”等信息，可以百度搜索其他提供 Chrome 下载的源，用其地址替换掉命令中的地址。
+   sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/
+   #导入谷歌软件的公钥，用于下面步骤中对下载软件进行验证。如果顺利的话，命令将返回“OK”
+   wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -
+   #用于对当前系统的可用更新列表进行更新。
+   sudo apt-get update
+   #如果提示错误，就根据提示使用以下语句对依赖包进行更新
+   sudo apt-get -f install
+   #执行对谷歌 Chrome 浏览器（稳定版）的安装
+   sudo apt-get install google-chrome-stable
+   #在终端中执行以下命令启动浏览器，然后右键锁定到启动器即可
+   google-chrome-stable
+   
+   ```
+
+   
