@@ -1,0 +1,46 @@
+前情回顾
+
+1. Linux操作系统的使用
+	 
+	 * Linux操作系统发展
+	 * 操作系统  （主要）
+	 * linux文件系统命令
+	 * ssh 认识
+	 * vim命令 
+
+2. 数据结构
+   数据 ： 集合整体的概念，包含一些列数据元素
+	 结构 ： 研究组成数据的数据元素间的关系
+
+3. （主要）
+   逻辑关系 ： 对事物进行数学模型的构建 线性，非线性
+	 存储关系 ： 在内存中存储行为，顺序存储，链式存储
+
+4. 线性表的链式存储
+
+*******************************************************
+
+队列和栈
+
+栈 ： 只能在一端操作的线性表
+
+   功能:  * 初始化
+					* 入栈
+					* 出栈
+					* 判断栈是否为空
+		
+	 
+	 存储 ： 顺序存储
+	         链式存储
+
+练习 ： 检测一段文字中的括号是否为成对出现，如果不是则报出括号匹配的错误问题。
+
+data = '''Both of (these issues) are fixed by postponing the evaluation of annotations. {Instead (of) compiling} code which executes [expressions in] annotations at their definition time, {the compiler} stores the annotation in a string form (equivalent to the [AST of] the) expression in question. If needed, annotations can be resolved at runtime using
+'''
+
+作业 : 1. 对重点代码，画图理解
+			 2. 简单的加减法逆波兰表达式
+			    * 只包含加减法即可
+					* p表示表达式的结束标志
+					* 使用链式栈完成
+					* 效果类似dc命令
