@@ -9,6 +9,7 @@
    2. 命令格式
 
       ```linux
+      ssh 用户名@IP地址 ##连接远程主机
       scp 文件名 用户名@IP地址:绝对路径
       scp pycharm.tar.gz tarena@172.40.78.200:/home/tarena/ 
       ```
@@ -209,13 +210,25 @@
 
 1. git使用
 
-   ```shell
-   echo "# python_learn_0701" >> README.md
-   git init
-   git add README.md
-   git commit -m "first commit"
-   git remote add origin git@github.com:NavasCSDN/python_learn_0701.git
-   git push -u origin master
+```linux
+echo "# python_learn_0701" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:NavasCSDN/python_learn_0701.git
+git push -u origin master
+```
+
+2. [json的使用]: https://blog.csdn.net/qq_40605167/article/details/81349501
+
+3.  时间复杂度的计算
+
+   ```html
+   简单操作   如print('a')等时间复杂度为1
+   
+   循环结构，时间复杂度按乘法进行计算,如本例中实现的操作
+   
+   分支结构，各分支的时间复杂度取最大值，最多的那个分支
    ```
 
    
